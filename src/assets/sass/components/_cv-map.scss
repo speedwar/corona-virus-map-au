@@ -1,0 +1,49 @@
+.cv-map {
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  align-items: stretch;
+}
+
+.cv-map__container {
+  height: 90vh;
+  width: 100%;
+}
+
+.cv-map__content--left {
+  width: rem(260);
+  padding: rem($g-spacing-l);
+}
+
+.cv-map__content--right {
+  flex-grow: 1;
+}
+
+.cv-map-content__block {
+  padding: rem($g-spacing-s) rem($g-spacing-l);
+  margin-bottom: rem($g-spacing);
+  width: 100%;
+  text-align: center;
+  font-size: rem($g-font-size-3x-l * 2);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.cv-map-content__block--s {
+  font-size: rem($g-font-size-3x-l);
+}
+
+.cv-map__marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(255, 0, 0, 0.2);
+  border-radius: 100%;
+  user-select: none;
+  transform: translate(-50%, -50%);
+
+  &:hover {
+    z-index: 1;
+  }
+}
